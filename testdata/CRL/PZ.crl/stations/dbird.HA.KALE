@@ -1,0 +1,33 @@
+originating_organization "ATHNET University of Athens, Greece"
+network_list HA
+begin_station
+  KALE 2008.09.05-00:00:00 present 38.3911 22.1398 760. 0.0 "Kalithea, Greece"
+  Owner "NTUA"
+  
+  begin_location
+    Location "00" 38.3911 22.1398 760. 0.0 KALE
+  end_location
+  
+  begin_sensor
+#  EW, NS, et Z capteur T4444 CMG40T 60sec
+    VEL1 CMG40T "none" "sensor/CMG40T.T4444.E.2007_01_03.present" 90.000 0.000
+    VEL2 CMG40T "none" "sensor/CMG40T.T4444.N.2007_01_03.present" 0.000 0.000
+    VEL3 CMG40T "none" "sensor/CMG40T.T4444.Z.2007_01_03.present" 0.000 -90.000
+  end_sensor
+   # 
+  begin_ana_filter
+    REF32 "ana_filter/reftek_gain32"
+  end_ana_filter
+  
+  begin_digitizer
+    DIG1 "digitizer/reftek130.100"
+  end_digitizer
+  
+  begin_channel
+#  reftek 9E22 
+    "00" HHE VEL1 none DIG1 none 2008.09.05-00:00:00 present HA
+    "00" HHN VEL2 none DIG1 none 2008.09.05-00:00:00 present HA
+    "00" HHZ VEL3 none DIG1 none 2008.09.05-00:00:00 present HA
+  end_channel
+  
+end_station
