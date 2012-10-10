@@ -1,7 +1,7 @@
 originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL 
 begin_station
-   AP02 2011.10.22-15:00:00 present 38.38808 21.87972 3.7 0. "Agios Policarpos, Greece"
+   AP02 2011.10.22-15:00:00 2012.03.22-16:00:00 38.38808 21.87972 3.7 0. "Agios Policarpos, Greece"
    Owner "INSU"
 
    begin_location
@@ -10,9 +10,11 @@ begin_station
 
    begin_sensor
 # EW, NS, et Z
-      VEL1 CMG40T "none" "sensor/CMG40T.T4158.E.2002_01_01.present" 90.000 0.000
-      VEL2 CMG40T "none" "sensor/CMG40T.T4158.N.2002_01_01.present" 0.000 0.000
-      VEL3 CMG40T "none" "sensor/CMG40T.T4158.Z.2002_01_01.present" 0.000 -90.000
+# a l'installation T4158 presente des pb, il est raporte en France et remplace par le capteur venant de TRIZ
+# T4M78 verifie au demontage
+      VEL1 CMG40T "none" "sensor/CMG40T.T4M78.E.2007_01_16.present" 90.000 0.000
+      VEL2 CMG40T "none" "sensor/CMG40T.T4M78.E.2007_01_16.present" 0.000 0.000
+      VEL3 CMG40T "none" "sensor/CMG40T.T4M78.E.2007_01_16.present" 0.000 -90.000
    end_sensor
 #
    begin_digitizer
@@ -21,9 +23,9 @@ begin_station
    end_digitizer
 
    begin_channel
-      "00" HHE VEL1 none DIG none 2011.10.22-15:00:00 present CL
-      "00" HHN VEL2 none DIG none 2011.10.22-15:00:00 present CL
-      "00" HHZ VEL3 none DIG none 2011.10.22-15:00:00 present CL
+      "00" HHE VEL1 none DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
+      "00" HHN VEL2 none DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
+      "00" HHZ VEL3 none DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
    end_channel
 
 end_station

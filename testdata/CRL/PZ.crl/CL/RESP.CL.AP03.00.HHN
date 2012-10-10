@@ -1,4 +1,4 @@
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     AP03
@@ -6,7 +6,7 @@ B050F16     Network:     CL
 B052F03     Location:    00
 B052F04     Channel:     HHN
 B052F22     Start date:  2011,295,15:00:00
-B052F23     End date:    No Ending Time
+B052F23     End date:    2012,082,16:00:00
 #		=======================================
 #		+               +--------------------------------------------+                +
 #		+               |   Response (Poles & Zeros),  AP03 ch HHN   |                +

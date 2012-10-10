@@ -1,4 +1,4 @@
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     PAN
@@ -16,8 +16,8 @@ B053F03     Transfer function type:                A [Laplace Transform (Rad/sec
 B053F04     Stage sequence number:                 1
 B053F05     Response in units lookup:              M/S - Velocity
 B053F06     Response out units lookup:             V - Volts
-B053F07     A0 normalization factor:               4.10335
-B053F08     Normalization frequency:               1
+B053F07     A0 normalization factor:               0.999999
+B053F08     Normalization frequency:               10
 B053F09     Number of zeroes:                      2
 B053F14     Number of poles:                       2
 #		Complex zeroes:
@@ -35,7 +35,7 @@ B053F15-18    1 -8.796000E+00 -8.974000E+00  0.000000E+00  0.000000E+00
 #		
 B058F03     Stage sequence number:                 1
 B058F04     Gain:                                  1.550000E+02
-B058F05     Frequency of gain:                     1.000000E+00 HZ
+B058F05     Frequency of gain:                     1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
 #		+               +-------------------------------------------+                 +
@@ -75,10 +75,10 @@ B058F06     Number of calibrations:                0
 #		
 B058F03     Stage sequence number:                 0
 B058F04     Sensitivity:                           2.126200E+08
-B058F05     Frequency of sensitivity:              1.000000E+00 HZ
+B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     PAN
@@ -96,8 +96,8 @@ B053F03     Transfer function type:                A [Laplace Transform (Rad/sec
 B053F04     Stage sequence number:                 1
 B053F05     Response in units lookup:              M/S - Velocity
 B053F06     Response out units lookup:             V - Volts
-B053F07     A0 normalization factor:               4.10335
-B053F08     Normalization frequency:               1
+B053F07     A0 normalization factor:               0.999999
+B053F08     Normalization frequency:               10
 B053F09     Number of zeroes:                      2
 B053F14     Number of poles:                       2
 #		Complex zeroes:
@@ -115,7 +115,7 @@ B053F15-18    1 -8.796000E+00 -8.974000E+00  0.000000E+00  0.000000E+00
 #		
 B058F03     Stage sequence number:                 1
 B058F04     Gain:                                  1.550000E+02
-B058F05     Frequency of gain:                     1.000000E+00 HZ
+B058F05     Frequency of gain:                     1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
 #		+                  +---------------------------------------+                  +
@@ -124,7 +124,7 @@ B058F06     Number of calibrations:                0
 #		
 B058F03     Stage sequence number:                 2
 B058F04     Gain:                                  4.960000E+00
-B058F05     Frequency of gain:                     1.000000E+00 HZ
+B058F05     Frequency of gain:                     1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
 #		+               +-------------------------------------------+                 +
@@ -286,10 +286,10 @@ B058F06     Number of calibrations:                0
 #		
 B058F03     Stage sequence number:                 0
 B058F04     Sensitivity:                           1.289830E+09
-B058F05     Frequency of sensitivity:              1.000000E+00 HZ
+B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     PAN
@@ -307,8 +307,8 @@ B053F03     Transfer function type:                A [Laplace Transform (Rad/sec
 B053F04     Stage sequence number:                 1
 B053F05     Response in units lookup:              M/S - Velocity
 B053F06     Response out units lookup:             V - Volts
-B053F07     A0 normalization factor:               4.10335
-B053F08     Normalization frequency:               1
+B053F07     A0 normalization factor:               0.999999
+B053F08     Normalization frequency:               10
 B053F09     Number of zeroes:                      2
 B053F14     Number of poles:                       2
 #		Complex zeroes:
@@ -326,7 +326,7 @@ B053F15-18    1 -8.796000E+00 -8.974000E+00  0.000000E+00  0.000000E+00
 #		
 B058F03     Stage sequence number:                 1
 B058F04     Gain:                                  1.550000E+02
-B058F05     Frequency of gain:                     1.000000E+00 HZ
+B058F05     Frequency of gain:                     1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
 #		+               +-------------------------------------------+                 +
@@ -618,6 +618,6 @@ B058F06     Number of calibrations:                0
 #		
 B058F03     Stage sequence number:                 0
 B058F04     Sensitivity:                           9.751500E+07
-B058F05     Frequency of sensitivity:              1.000000E+00 HZ
+B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		

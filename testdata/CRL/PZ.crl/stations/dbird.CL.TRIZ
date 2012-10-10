@@ -4,7 +4,7 @@ originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL 
 begin_station
 # mesure GPS reftek 2010 sur 918C a TRIZ 38.36543,  22.07272 59
-   TRIZ 2005.10.21-00:00:00 present 38.36543 22.07272 59. 2. "Trizonia, Greece"
+   TRIZ 2005.10.21-00:00:00 present 38.36543 22.07272 59. 2. "Trizonia, Dorida, Central Greece, Greece"
    Owner "INSU"
 
    begin_location
@@ -27,7 +27,10 @@ begin_station
       VEL3_1 CMG40T "none" "sensor/CMG40T.T4D40.E.2008_10_10.present" 90.000 0.000
       VEL3_2 CMG40T "none" "sensor/CMG40T.T4D40.N.2008_10_10.present" 0.000 0.000
       VEL3_3 CMG40T "none" "sensor/CMG40T.T4D40.Z.2008_10_10.present" 0.000 -90.000
-
+# un capteur accelerometrique dont on ne connait pas le numero
+      ACC1 CMG5T "none" "sensor/CMG5T.TRIZ.Z.2003_02_27.present" 90.000 0.000
+      ACC2 CMG5T "none" "sensor/CMG5T.TRIZ.Z.2003_02_27.present" 0.000 0.000
+      ACC3 CMG5T "none" "sensor/CMG5T.TRIZ.Z.2003_02_27.present" 0.000 -90.000
    end_sensor
 #
    begin_ana_filter
@@ -36,27 +39,37 @@ begin_station
 
    begin_digitizer
       DIG1 "digitizer/reftek130.100"
+      DIG2 "digitizer/reftek130.20"
    end_digitizer
 
    begin_channel
 # les reftek se sont succedees
 #     2005:294-2009:159 918C, 2009:161-2010:184 98A7, 2010:187-2010:293 918C, 2010:293-present ACCB
-# on note 1.042mv/bit et 104.2 mV/bit comme info gaini jour 184/2010.
+# ensuite on a la B372 ...
+# on note 1.042mv/bit et 104.2 mV/bit comme info gain jour 184/2010.
       "00" HHE VEL1_1 none  DIG1 none 2005.10.21-00:00:00 2010.10.20-00:00:00 CL
       "00" HHN VEL1_2 none  DIG1 none 2005.10.21-00:00:00 2010.10.20-00:00:00 CL
       "00" HHZ VEL1_3 none  DIG1 none 2005.10.21-00:00:00 2010.10.20-00:00:00 CL
 
-      "00" EHE VEL2_1 none  DIG1 none 2010.10.20-00:00:00 2011.06.17-10:20:00 CL
-      "00" EHN VEL2_2 none  DIG1 none 2010.10.20-00:00:00 2011.06.17-10:20:00 CL
-      "00" EHZ VEL2_3 none  DIG1 none 2010.10.20-00:00:00 2011.06.17-10:20:00 CL
+      "00" EHE VEL2_1 none  DIG1 none 2010.10.20-00:00:01 2011.06.17-10:20:00 CL
+      "00" EHN VEL2_2 none  DIG1 none 2010.10.20-00:00:01 2011.06.17-10:20:00 CL
+      "00" EHZ VEL2_3 none  DIG1 none 2010.10.20-00:00:01 2011.06.17-10:20:00 CL
 
-      "00" HHE VEL3_1 none  DIG1 none 2011.06.17-10:20:00 2011.10.24-10:00:00 CL
-      "00" HHN VEL3_2 none  DIG1 none 2011.06.17-10:20:00 2011.10.24-10:00:00 CL
-      "00" HHZ VEL3_3 none  DIG1 none 2011.06.17-10:20:00 2011.10.24-10:00:00 CL
+      "00" HHE VEL3_1 none  DIG1 none 2011.06.17-10:20:01 2011.10.24-10:00:00 CL
+      "00" HHN VEL3_2 none  DIG1 none 2011.06.17-10:20:01 2011.10.24-10:00:00 CL
+      "00" HHZ VEL3_3 none  DIG1 none 2011.06.17-10:20:01 2011.10.24-10:00:00 CL
 
       "00" HHE VEL1_1 none  DIG1 none 2011.10.24-12:00:00 present CL
       "00" HHN VEL1_2 none  DIG1 none 2011.10.24-12:00:00 present CL
       "00" HHZ VEL1_3 none  DIG1 none 2011.10.24-12:00:00 present CL
+
+      "00" BNE ACC1 none DIG2 none 2005.10.21-00:00:00 present CL
+      "00" BNN ACC2 none DIG2 none 2005.10.21-00:00:00 present CL
+      "00" BNZ ACC3 none DIG2 none 2005.10.21-00:00:00 present CL
+
+      "00" HNE ACC1 none DIG1 none 2005.10.21-00:00:00 present CL
+      "00" HNN ACC2 none DIG1 none 2005.10.21-00:00:00 present CL
+      "00" HNZ ACC3 none DIG1 none 2005.10.21-00:00:00 present CL
 
    end_channel
 

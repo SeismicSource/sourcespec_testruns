@@ -1,11 +1,11 @@
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     TRIZ
 B050F16     Network:     CL
 B052F03     Location:    00
 B052F04     Channel:     EHE
-B052F22     Start date:  2010,293,00:00:00
+B052F22     Start date:  2010,293,00:00:01
 B052F23     End date:    2011,168,10:20:00
 #		=======================================
 #		+               +--------------------------------------------+                +

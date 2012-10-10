@@ -2,7 +2,7 @@ originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL 
 begin_station
 # coordonnees prises sur le premier mois de log nsat > 8
-   EF03 2011.10.22-15:00:00 present 38.415006 21.946994 110. 00. "Efpalio N antenne temporaire, Greece"
+   EF03 2011.10.22-15:00:00 2012.03.22-16:00:00 38.415006 21.946994 110. 00. "Efpalio N antenne temporaire, Greece"
    Owner "INSU"
 
    begin_location
@@ -11,10 +11,10 @@ begin_station
 
    begin_sensor
 # EW, NS, et Z
-# attention on ne sait pas quel est le capteur.....
-      VEL1 CMG40T "none" "sensor/CMG40T.T4161.E.1996_04_01.present" 90.000 0.000
-      VEL2 CMG40T "none" "sensor/CMG40T.T4161.N.1996_04_01.present" 0.000 0.000
-      VEL3 CMG40T "none" "sensor/CMG40T.T4161.Z.1996_04_01.present" 0.000 -90.000
+# T4H11 apres verification au demontage
+      VEL1 CMG40T "none" "sensor/CMG40T.T4H11.E.2005_01_05.present" 90.000 0.000
+      VEL2 CMG40T "none" "sensor/CMG40T.T4H11.N.2005_01_05.present" 0.000 0.000
+      VEL3 CMG40T "none" "sensor/CMG40T.T4H11.Z.2005_01_05.present" 0.000 -90.000
    end_sensor
 #
    begin_ana_filter
@@ -22,13 +22,17 @@ begin_station
    end_ana_filter
 
    begin_digitizer
-      DIG "digitizer/kephren.ADS1251.100"
+      DIG1 "digitizer/kephren.ADS1251.100"
+      DIG2 "digitizer/kephren.ADS1251.250"
    end_digitizer
 
    begin_channel
-      "00" HHE VEL1 GAIN2 DIG none 2011.10.22-15:00:00 present CL
-      "00" HHN VEL2 GAIN2 DIG none 2011.10.22-15:00:00 present CL
-      "00" HHZ VEL3 GAIN2 DIG none 2011.10.22-15:00:00 present CL
+      "00" HHE VEL1 GAIN2 DIG1 none 2011.10.22-15:00:00 2012.02.13-08:00:00 CL
+      "00" HHN VEL2 GAIN2 DIG1 none 2011.10.22-15:00:00 2012.02.13-08:00:00 CL
+      "00" HHZ VEL3 GAIN2 DIG1 none 2011.10.22-15:00:00 2012.02.13-08:00:00 CL
+      "00" HHE VEL1 GAIN2 DIG2 none 2012.02.13-08:25:00 2012.03.22-16:00:00 CL
+      "00" HHN VEL2 GAIN2 DIG2 none 2012.02.13-08:25:00 2012.03.22-16:00:00 CL
+      "00" HHZ VEL3 GAIN2 DIG2 none 2012.02.13-08:25:00 2012.03.22-16:00:00 CL
    end_channel
 
 end_station 

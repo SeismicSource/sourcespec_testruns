@@ -2,7 +2,7 @@ originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL 
 begin_station
 # coordonnees prises sur le premier mois de log nsat > 8
-   EF02 2011.10.22-15:00:00 present 38.413785 21.948051 108. 00. "Efpalio SE antenne temporaire, Greece"
+   EF02 2011.10.22-15:00:00 2012.03.22-16:00:00 38.413785 21.948051 108. 00. "Efpalio SE antenne temporaire, Greece"
    Owner "INSU"
 
    begin_location
@@ -11,10 +11,10 @@ begin_station
 
    begin_sensor
 # EW, NS, et Z
-# attention on ne sait pas quel est le capteur.....
-      VEL1 CMG40T "none" "sensor/CMG40T.T4161.E.1996_04_01.present" 90.000 0.000
-      VEL2 CMG40T "none" "sensor/CMG40T.T4161.N.1996_04_01.present" 0.000 0.000
-      VEL3 CMG40T "none" "sensor/CMG40T.T4161.Z.1996_04_01.present" 0.000 -90.000
+# T4158 vérification en enlevant les capteurs
+      VEL1 CMG40T "none" "sensor/CMG40T.T4158.E.2002_01_01.present" 90.000 0.000
+      VEL2 CMG40T "none" "sensor/CMG40T.T4158.N.2002_01_01.present" 0.000 0.000
+      VEL3 CMG40T "none" "sensor/CMG40T.T4158.Z.2002_01_01.present" 0.000 -90.000
    end_sensor
 #
    begin_ana_filter
@@ -26,9 +26,9 @@ begin_station
    end_digitizer
 
    begin_channel
-      "00" HHE VEL1 GAIN2 DIG none 2011.10.22-15:00:00 present CL
-      "00" HHN VEL2 GAIN2 DIG none 2011.10.22-15:00:00 present CL
-      "00" HHZ VEL3 GAIN2 DIG none 2011.10.22-15:00:00 present CL
+      "00" HHE VEL1 GAIN2 DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
+      "00" HHN VEL2 GAIN2 DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
+      "00" HHZ VEL3 GAIN2 DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
    end_channel
 
 end_station 

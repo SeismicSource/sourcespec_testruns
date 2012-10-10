@@ -1,4 +1,4 @@
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     TEM
@@ -209,7 +209,7 @@ B058F04     Sensitivity:                           6.906840E+08
 B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     TEM
@@ -411,7 +411,7 @@ B058F04     Sensitivity:                           1.392510E+08
 B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     TEM
@@ -622,7 +622,7 @@ B058F04     Sensitivity:                           6.906840E+08
 B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     TEM
@@ -954,7 +954,7 @@ B058F04     Sensitivity:                           5.221770E+07
 B058F05     Frequency of sensitivity:              1.000000E+01 HZ
 B058F06     Number of calibrations:                0
 #		
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     TEM

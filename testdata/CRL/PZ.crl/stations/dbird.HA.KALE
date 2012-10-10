@@ -1,7 +1,7 @@
 originating_organization "ATHNET University of Athens, Greece"
 network_list HA
 begin_station
-  KALE 2008.09.05-00:00:00 present 38.3911 22.1398 760. 0.0 "Kalithea, Greece"
+  KALE 2008.09.05-00:00:00 present 38.3911 22.1398 760. 0.0 "Kalithea, Dorida, Central Greece, Greece"
   Owner "NTUA"
   
   begin_location

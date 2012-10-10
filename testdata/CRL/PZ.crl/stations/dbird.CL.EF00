@@ -2,8 +2,7 @@ originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL 
 begin_station
 # coordonnees prises sur le premier mois de log nsat > 8
-   EF00 2011.10.22-15:00:00 present 38.414211 21.947044 109. 00. "Efpalio Centre antenne temporaire, Greece"
-#   AGE 2000.05.15-13:00:00 present 38.26488 22.06354 17.0 135.00 "Agios Giorgios, Aigion, Greece"
+   EF00 2011.10.22-15:00:00 2012.03.22-16:00:00 38.414211 21.947044 109. 00. "Efpalio Centre antenne temporaire, Greece"
 
    Owner "INSU"
 
@@ -23,9 +22,9 @@ begin_station
    end_digitizer
 
    begin_channel
-      "00" HHE VEL1 none DIG none 2011.10.22-15:00:00 present CL
-      "00" HHN VEL2 none DIG none 2011.10.22-15:00:00 present CL
-      "00" HHZ VEL3 none DIG none 2011.10.22-15:00:00 present CL
+      "00" HHE VEL1 none DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
+      "00" HHN VEL2 none DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
+      "00" HHZ VEL3 none DIG none 2011.10.22-15:00:00 2012.03.22-16:00:00 CL
    end_channel
 
 end_station 

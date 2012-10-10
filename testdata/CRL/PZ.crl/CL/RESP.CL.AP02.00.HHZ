@@ -1,4 +1,4 @@
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     AP02
@@ -6,7 +6,7 @@ B050F16     Network:     CL
 B052F03     Location:    00
 B052F04     Channel:     HHZ
 B052F22     Start date:  2011,295,15:00:00
-B052F23     End date:    No Ending Time
+B052F23     End date:    2012,082,16:00:00
 #		=======================================
 #		+               +--------------------------------------------+                +
 #		+               |   Response (Poles & Zeros),  AP02 ch HHZ   |                +
@@ -37,7 +37,7 @@ B053F15-18    4 -1.130970E+03  0.000000E+00  0.000000E+00  0.000000E+00
 #		+                  +---------------------------------------+                  +
 #		
 B058F03     Stage sequence number:                 1
-B058F04     Gain:                                  8.000000E+02
+B058F04     Gain:                                  8.010000E+02
 B058F05     Frequency of gain:                     1.000000E+00 HZ
 B058F06     Number of calibrations:                0
 #		
@@ -288,7 +288,7 @@ B058F06     Number of calibrations:                0
 #		+                  +---------------------------------------+                  +
 #		
 B058F03     Stage sequence number:                 0
-B058F04     Sensitivity:                           5.033030E+08
+B058F04     Sensitivity:                           5.039320E+08
 B058F05     Frequency of sensitivity:              1.000000E+00 HZ
 B058F06     Number of calibrations:                0
 #		

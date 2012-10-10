@@ -1,4 +1,4 @@
-#		<< IRIS SEED Reader, Release 5.1 >>
+#		<< IRIS SEED Reader, Release 5.2 >>
 #		
 #		======== CHANNEL RESPONSE DATA ========
 B050F03     Station:     KALE
@@ -37,7 +37,7 @@ B053F15-18    4 -1.130970E+03  0.000000E+00  0.000000E+00  0.000000E+00
 #		+                  +---------------------------------------+                  +
 #		
 B058F03     Stage sequence number:                 1
-B058F04     Gain:                                  1.990000E+03
+B058F04     Gain:                                  9.950000E+02
 B058F05     Frequency of gain:                     1.000000E+00 HZ
 B058F06     Number of calibrations:                0
 #		
@@ -329,7 +329,7 @@ B058F06     Number of calibrations:                0
 #		+                  +---------------------------------------+                  +
 #		
 B058F03     Stage sequence number:                 0
-B058F04     Sensitivity:                           1.251970E+09
+B058F04     Sensitivity:                           6.259830E+08
 B058F05     Frequency of sensitivity:              1.000000E+00 HZ
 B058F06     Number of calibrations:                0
 #		
