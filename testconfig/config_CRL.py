@@ -36,8 +36,8 @@ pre_filt = (0.1, 0.2, 55., 60.)
 
 
 # INITIAL PARAMETERS
-#vp=5.5
-vs=3.055
+vp=6.05
+vs=3.36
 rho=2700 #density
 rps=0.62 #radiation pattern coefficient
 #qs=12000.
