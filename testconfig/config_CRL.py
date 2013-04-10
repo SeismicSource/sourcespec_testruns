@@ -11,6 +11,8 @@ PLOT_SAVE = True
 #PLOT_SAVE_FORMAT = 'pdf' #slower
 PLOT_SAVE_FORMAT = 'png'
 
+traceids = 'testconfig/traceids.py'
+
 database_file = 'sourcepar.sqlite'
 
 # If true, traces are not fully deconvolved
