@@ -11,8 +11,15 @@ PLOT_SAVE = True
 #PLOT_SAVE_FORMAT = 'pdf' #slower
 PLOT_SAVE_FORMAT = 'png'
 
+# directory or file for dataless (optional):
+dataless = 'testdata/CRL/PZ.crl'
+# alternatively, a directory with PAZ files can be specified:
+#paz = 'dir/to/PAZ'
+
+# traceid file for station SCNL correction (optional):
 traceids = 'testconfig/traceids.py'
 
+# database file for storing output parameters (optional):
 database_file = 'sourcepar.sqlite'
 
 # If true, traces are not fully deconvolved
