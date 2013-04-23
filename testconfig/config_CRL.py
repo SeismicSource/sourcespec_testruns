@@ -47,6 +47,16 @@ bsd=5e6 #Mpa
 # -------------------
 
 
+## S/N ratio parameter
+# s-wave (and noise) window 
+pre_p_time   = 0.5 #sec
+p_win_length = 3 #sec
+pre_noise_time = 5 #sec 
+noise_win_length = 3 #sec
+#S/N ratio min
+sn_min = 2
+
+
 # SPECTRUM PARAMETERS
 # S-wave window
 pre_s_time   = 1 #sec
