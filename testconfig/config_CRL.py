@@ -91,3 +91,8 @@ t_star_0 = 0.045
 # Min and max acceptable corner frequencies
 min_corner_freq = 0.5
 max_corner_freq = 40
+
+# check if the trace has (significant) signal
+# since the count value is generally huge, we need to demean twice
+# to take into account for the rounding error
+rmsmin = 1e-10 
