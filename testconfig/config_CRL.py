@@ -52,6 +52,9 @@ bsd=5e6 #Mpa
 pre_s_time   = 1 #sec
 s_win_length = 5 #sec
 
+# Taper
+taper_halfwidth = 0.05 #between 0 (no taper) and 0.5
+
 # Band-pass frequencies for accelerometers and velocimeters
 # TODO: calculate from sampling rate?
 bp_freqmin_acc    =  1.0
