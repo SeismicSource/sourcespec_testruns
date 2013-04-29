@@ -41,6 +41,8 @@ bsd=5e6 #Mpa
 
 
 # SPECTRUM PARAMETERS
+time_domain_int = True
+
 # S-wave window
 pre_s_time   = 1 #sec
 s_win_length = 5 #sec
