@@ -45,7 +45,7 @@ time_domain_int = True
 
 # S-wave window
 pre_s_time   = 1 #sec
-s_win_length = 5 #sec
+s_win_length = 10 #sec
 
 # Taper
 taper_halfwidth = 0.05 #between 0 (no taper) and 0.5
