@@ -55,7 +55,7 @@ sn_min = 1
 
 
 # SPECTRUM PARAMETERS
-time_domain_int = False
+time_domain_int = True
 
 # S-wave window
 pre_s_time   = 1 #sec
