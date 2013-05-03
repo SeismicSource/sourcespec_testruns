@@ -47,7 +47,11 @@ bsd=5e6 #Mpa
 # -------------------
 
 
-## S/N ratio parameter
+## S/N PARAMETERS
+# Minimum rms (in trace units before instrument corrections)
+# to consider a trace as noise
+rmsmin = 1e-10 
+
 # s-wave (and noise) window 
 pre_p_time   = 0.5 #sec
 p_win_length = 3 #sec
@@ -101,8 +105,3 @@ t_star_0 = 0.045
 # Min and max acceptable corner frequencies
 min_corner_freq = 0.5
 max_corner_freq = 40
-
-# check if the trace has (significant) signal
-# since the count value is generally huge, we need to demean twice
-# to take into account for the rounding error
-rmsmin = 1e-10 

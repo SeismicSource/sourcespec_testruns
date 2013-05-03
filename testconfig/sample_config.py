@@ -29,7 +29,7 @@ pre_filt = (0.1, 0.2, 55., 60.)
 
 
 # INITIAL PARAMETERS
-#vp=5.5
+vp=5.5
 vs=3.055
 rho=2700 #density
 rps=0.62 #radiation pattern coefficient
@@ -40,7 +40,23 @@ bsd=5e6 #Mpa
 # -------------------
 
 
+## S/N PARAMETERS
+# Minimum rms (in trace units before instrument corrections)
+# to consider a trace as noise
+rmsmin = 1e-10 
+
+# s-wave (and noise) window 
+pre_p_time   = 0.5 #sec
+p_win_length = 3 #sec
+pre_noise_time = 5 #sec 
+noise_win_length = 3 #sec
+#S/N ratio min
+sn_min = 1
+
+
 # SPECTRUM PARAMETERS
+time_domain_int = False
+
 # S-wave window
 pre_s_time   = 1 #sec
 s_win_length = 5 #sec
