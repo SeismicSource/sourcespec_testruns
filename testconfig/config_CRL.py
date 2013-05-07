@@ -46,6 +46,7 @@ rps=0.62 #radiation pattern coefficient
 bsd=5e6 #Mpa
 # -------------------
 
+ignore_vertical = True
 
 ## S/N PARAMETERS
 # Minimum rms (in trace units before instrument corrections)
