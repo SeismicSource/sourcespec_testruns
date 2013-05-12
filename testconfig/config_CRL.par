@@ -1,26 +1,23 @@
-# -*- coding: utf-8 -*-
-# Parameter file for source_spec.py
-# This file has to be valid Python code and can contain scripting
-
+# Configuration file for source_spec.py
 
 # GENERAL PARAMETERS
 #DEBUG=True # True: print debug information
 DEBUG=False # True: print debug information
 PLOT_SHOW = False
 PLOT_SAVE = True
-#PLOT_SAVE_FORMAT = 'pdf' #slower
-PLOT_SAVE_FORMAT = 'png'
+#PLOT_SAVE_FORMAT = pdf #slower
+PLOT_SAVE_FORMAT = png
 
 # directory or file for dataless (optional):
-dataless = 'testdata/CRL/PZ.crl'
+dataless = testdata/CRL/PZ.crl
 # alternatively, a directory with PAZ files can be specified:
-#paz = 'dir/to/PAZ'
+#paz = dir/to/PAZ
 
 # traceid file for station SCNL correction (optional):
-traceids = 'testconfig/traceids.py'
+traceids = testconfig/traceids.py
 
 # database file for storing output parameters (optional):
-database_file = 'sourcepar.sqlite'
+database_file = sourcepar.sqlite
 
 # If true, traces are not fully deconvolved
 # for the instrumental response: only the
@@ -28,10 +25,10 @@ database_file = 'sourcepar.sqlite'
 # on a large number of traces).
 correct_sensitivity_only = False
 # Pre-filtering frequencies for instrument correction
-# Specify the four corner frequencies (f1,f2,f3,f4)
+# Specify the four corner frequencies (f1, f2, f3, f4)
 # of a cosine taper which is one between f2 and f3
 # and tapers to zero for f1 < f < f2 and f3 < f < f4.
-pre_filt = (0.1, 0.2, 55., 60.)
+pre_filt = 0.1, 0.2, 55., 60.
 # -------------------
 
 
@@ -54,9 +51,9 @@ ignore_vertical = True
 rmsmin = 1e-10 
 
 # s-wave (and noise) window 
-pre_p_time   = 0.5 #sec
-p_win_length = 3 #sec
-pre_noise_time = 5 #sec 
+pre_p_time       = 0.5 #sec
+p_win_length     = 3 #sec
+pre_noise_time   = 5 #sec 
 noise_win_length = 3 #sec
 #S/N ratio min
 sn_min = 2
