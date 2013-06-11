@@ -1,0 +1,38 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL 
+begin_station
+# coordonnees prises sur google, changer si possible
+   MALA 2012.12.15-00:00:00 present 38.3935 21.8726 7. 180. "Malamata, Dorida, Central Greece, Greece"
+
+   Owner "INSU"
+
+   begin_location
+      Location "00" 38.3935 21.8726 7. 180. MALA
+   end_location
+
+   begin_sensor
+# EW, NS, et Z
+# capteur oriente par correlation de bruit de fond avec capteur de surface
+# mesures successives -134, -128, -126, 235.
+      VEL1 CMGSP1 "none" "sensor/CMGSP1.T37617.E.2012-11-06.present" 323.000 0.000
+      VEL2 CMGSP1 "none" "sensor/CMGSP1.T37617.N.2012-11-06.present" 233.0 0.000
+      VEL3 CMGSP1 "none" "sensor/CMGSP1.T37617.Z.2012-11-06.present" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A3907_1.100"
+      DIG2 "digitizer/guralp.dm24_A3907_2.100"
+      DIG3 "digitizer/guralp.dm24_A3907_3.100"
+      DIG4 "digitizer/guralp.dm24_A3907_4.100"
+      DIG5 "digitizer/guralp.dm24_A3907_5.100"
+      DIG6 "digitizer/guralp.dm24_A3907_6.100"
+   end_digitizer
+
+   begin_channel
+      "00" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "00" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "00" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 
+

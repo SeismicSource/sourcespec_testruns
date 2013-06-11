@@ -50,13 +50,18 @@ begin_station
     "01" EHN VEL2_2 none DIG1 none 2011.06.15-18:00:00 2012.06.19-15:00:00 CL
     "01" EHZ VEL2_3 none DIG1 none 2011.06.15-18:00:00 2012.06.19-15:00:00 CL
 # ajout second capteur composante NS HS 
-    "02" EHE VEL3_1 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
-    "02" EHN VEL3_2 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
-    "02" EHZ VEL3_3 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
-# deplacement capteur 2 a la place du 3
-    "02" EHE VEL2_1 none DIG1 none 2012.06.19-15:00:10 present CL
-    "02" EHN VEL2_2 none DIG1 none 2012.06.19-15:00:10 present CL
-    "02" EHZ VEL2_3 none DIG1 none 2012.06.19-15:00:10 present CL
+    "02" EHE VEL3_1 none DIG1 none 2011.12.14-00:00:00 present CL
+    "02" EHN VEL3_2 none DIG1 none 2011.12.14-00:00:00 present CL
+    "02" EHZ VEL3_3 none DIG1 none 2011.12.14-00:00:00 present CL
+# le 2012.06.19-15:00:00 deplacement capteur 2 a la place du 3
+#      mais la reponse ne change pas donc on n'en tient pas compte
+#      pour etre complet on aurait
+#    "02" EHE VEL3_1 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
+#    "02" EHN VEL3_2 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
+#    "02" EHZ VEL3_3 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
+#    "02" EHE VEL2_1 none DIG1 none 2012.06.19-15:00:10 present CL
+#    "02" EHN VEL2_2 none DIG1 none 2012.06.19-15:00:10 present CL
+#    "02" EHZ VEL2_3 none DIG1 none 2012.06.19-15:00:10 present CL
 
   end_channel
   

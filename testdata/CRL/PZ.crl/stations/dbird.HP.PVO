@@ -1,0 +1,29 @@
+originating_organization "PATNET University of Patras, Greece"
+network_list HP
+begin_station
+  PVO  1999.09.20-00:00:00 present 38.6167 21.5259 188. 0.0 "Paravola, Nafpaktos, Greece"
+  Owner "University of Patras"
+  
+  begin_location
+    Location "00" 38.6167 21.5259 188. 0.0 PVO
+  end_location
+  
+  begin_sensor
+#  EW, NS, et Z capteur trillium 120sec
+    VEL1 T120 "none" "sensor/T120" 90.000 0.000
+    VEL2 T120 "none" "sensor/T120" 0.000 0.000
+    VEL3 T120 "none" "sensor/T120" 0.000 -90.000
+  end_sensor
+  
+  begin_digitizer
+#  trident = reponse equivalente a taurus
+    DIG1 "digitizer/trident.off.100"
+  end_digitizer
+  
+  begin_channel
+    "00" HHE VEL1 none DIG1 none 1999.09.20-08:00:00 present HP
+    "00" HHN VEL2 none DIG1 none 1999.09.20-08:00:00 present HP
+    "00" HHZ VEL3 none DIG1 none 1999.09.20-08:00:00 present HP
+  end_channel
+  
+end_station
