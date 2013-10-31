@@ -1,4 +1,4 @@
-# ne sont mises que les infos concernant la stations reftek
+# ne sont mises que les infos concernant la station reftek
 
 originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL 
@@ -27,10 +27,19 @@ begin_station
       VEL3_1 CMG40T "none" "sensor/CMG40T.T4D40.E.2008_10_10.present" 90.000 0.000
       VEL3_2 CMG40T "none" "sensor/CMG40T.T4D40.N.2008_10_10.present" 0.000 0.000
       VEL3_3 CMG40T "none" "sensor/CMG40T.T4D40.Z.2008_10_10.present" 0.000 -90.000
+# le capteur STS a été réinstallé (Maurin, Pascal, Anne)
+# Les composantes horizontales sont tournées
+      VEL1_4 STS2 "none" "sensor/STS2_3" 180.000 0.000
+      VEL1_5 STS2 "none" "sensor/STS2_3" 90.000 0.000
+      VEL1_6 STS2 "none" "sensor/STS2_3" 0.000 -90.000
+
 # un capteur accelerometrique dont on ne connait pas le numero
       ACC1 CMG5T "none" "sensor/CMG5T.TRIZ.Z.2003_02_27.present" 90.000 0.000
       ACC2 CMG5T "none" "sensor/CMG5T.TRIZ.Z.2003_02_27.present" 0.000 0.000
       ACC3 CMG5T "none" "sensor/CMG5T.TRIZ.Z.2003_02_27.present" 0.000 -90.000
+# en juin 2013 le capteur accéléromètrique deterré par des vehicules sur le chemin
+# a été reinstallé derrière la cabanne
+# c'est un episensor orienté Y, X, Z
    end_sensor
 #
    begin_ana_filter
@@ -59,9 +68,9 @@ begin_station
       "00" HHN VEL3_2 none  DIG1 none 2011.06.17-10:20:01 2011.10.24-10:00:00 CL
       "00" HHZ VEL3_3 none  DIG1 none 2011.06.17-10:20:01 2011.10.24-10:00:00 CL
 
-      "00" HHE VEL1_1 none  DIG1 none 2011.10.24-12:00:00 present CL
-      "00" HHN VEL1_2 none  DIG1 none 2011.10.24-12:00:00 present CL
-      "00" HHZ VEL1_3 none  DIG1 none 2011.10.24-12:00:00 present CL
+      "00" HHE VEL1_4 none  DIG1 none 2011.10.24-12:00:00 present CL
+      "00" HHN VEL1_5 none  DIG1 none 2011.10.24-12:00:00 present CL
+      "00" HHZ VEL1_6 none  DIG1 none 2011.10.24-12:00:00 present CL
 
       "00" BNE ACC1 none DIG2 none 2005.10.21-00:00:00 present CL
       "00" BNN ACC2 none DIG2 none 2005.10.21-00:00:00 present CL

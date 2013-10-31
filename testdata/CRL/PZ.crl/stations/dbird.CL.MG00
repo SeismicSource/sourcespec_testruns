@@ -18,16 +18,26 @@ begin_station
       VEL3 T40 "none" "sensor/T40" 0.000 -90.000
    end_sensor
 #
+# numeriseur 6 voies 3878 couple a EAM 4828 installe au debut
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A3907_1.100"
-      DIG2 "digitizer/guralp.dm24_A3907_2.100"
-      DIG3 "digitizer/guralp.dm24_A3907_3.100"
+      DIG1 "digitizer/guralp.dm24_A3878_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A3878_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A3878_3_TTL23.100"
+
+# numeriseur changé pour un 3 voies en fin juillet 2013 
+# GPS non connecté???
+      DIG4 "digitizer/guralp.dm24_A4033_1_TTL23.100"
+      DIG5 "digitizer/guralp.dm24_A4033_2_TTL23.100"
+      DIG6 "digitizer/guralp.dm24_A4033_3_TTL23.100"
    end_digitizer
 
    begin_channel
-      "00" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
-      "00" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
-      "00" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+      "00" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "00" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "00" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "00" HHE VEL1 none DIG6 none 2013.07.10-01:00:00 present CL
+      "00" HHN VEL2 none DIG5 none 2013.07.10-01:00:00 present CL
+      "00" HHZ VEL3 none DIG4 none 2013.07.10-01:00:00 present CL
    end_channel
 
 end_station 
@@ -51,15 +61,23 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG4 "digitizer/guralp.dm24_A3907_4.100"
-      DIG5 "digitizer/guralp.dm24_A3907_5.100"
-      DIG6 "digitizer/guralp.dm24_A3907_6.100"
+# numeriseur 6 voies avec MG00
+      DIG4 "digitizer/guralp.dm24_A3878_4_TTL23.100"
+      DIG5 "digitizer/guralp.dm24_A3878_5_TTL23.100"
+      DIG6 "digitizer/guralp.dm24_A3878_6_TTL23.100"
+# numériseur 3 voies ajouté en septembre
+      DIG1 "digitizer/guralp.dm24_A4039_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4039_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4039_3_TTL23.100"
    end_digitizer
 
    begin_channel
-      "01" HHE VEL1 none DIG6 none 2012.12.15-00:00:00 present CL
-      "01" HHN VEL2 none DIG5 none 2012.12.15-00:00:00 present CL
-      "01" HHZ VEL3 none DIG4 none 2012.12.15-00:00:00 present CL
+      "01" HHE VEL1 none DIG6 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "01" HHN VEL2 none DIG5 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "01" HHZ VEL3 none DIG4 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "01" HHE VEL1 none DIG6 none 2013.09.20-00:00:00 present CL
+      "01" HHN VEL2 none DIG5 none 2013.09.20-00:00:00 present CL
+      "01" HHZ VEL3 none DIG4 none 2013.09.20-00:00:00 present CL
    end_channel
 
 end_station 
@@ -83,9 +101,9 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A4035_1.100"
-      DIG2 "digitizer/guralp.dm24_A4035_2.100"
-      DIG3 "digitizer/guralp.dm24_A4035_3.100"
+      DIG1 "digitizer/guralp.dm24_A4035_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4035_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4035_3_TTL23.100"
    end_digitizer
 
    begin_channel
@@ -115,9 +133,9 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A4038_1.100"
-      DIG2 "digitizer/guralp.dm24_A4038_2.100"
-      DIG3 "digitizer/guralp.dm24_A4038_3.100"
+      DIG1 "digitizer/guralp.dm24_A4038_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4038_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4038_3_TTL23.100"
    end_digitizer
 
    begin_channel
@@ -147,9 +165,9 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A4034_1.100"
-      DIG2 "digitizer/guralp.dm24_A4034_2.100"
-      DIG3 "digitizer/guralp.dm24_A4034_3.100"
+      DIG1 "digitizer/guralp.dm24_A4034_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4034_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4034_3_TTL23.100"
    end_digitizer
 
    begin_channel
@@ -179,9 +197,9 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A4036_1.100"
-      DIG2 "digitizer/guralp.dm24_A4036_2.100"
-      DIG3 "digitizer/guralp.dm24_A4036_3.100"
+      DIG1 "digitizer/guralp.dm24_A4036_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4036_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4036_3_TTL23.100"
    end_digitizer
 
    begin_channel
@@ -211,9 +229,9 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A4037_1.100"
-      DIG2 "digitizer/guralp.dm24_A4037_2.100"
-      DIG3 "digitizer/guralp.dm24_A4037_3.100"
+      DIG1 "digitizer/guralp.dm24_A4037_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4037_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4037_3_TTL23.100"
    end_digitizer
 
    begin_channel
@@ -243,9 +261,9 @@ begin_station
    end_sensor
 #
    begin_digitizer
-      DIG1 "digitizer/guralp.dm24_A4032_1.100"
-      DIG2 "digitizer/guralp.dm24_A4032_2.100"
-      DIG3 "digitizer/guralp.dm24_A4032_3.100"
+      DIG1 "digitizer/guralp.dm24_A4032_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4032_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4032_3_TTL23.100"
    end_digitizer
 
    begin_channel

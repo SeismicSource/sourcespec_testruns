@@ -56,6 +56,7 @@ begin_station
 # le 2012.06.19-15:00:00 deplacement capteur 2 a la place du 3
 #      mais la reponse ne change pas donc on n'en tient pas compte
 #      pour etre complet on aurait
+# juin 2013 reftek 981C
 #    "02" EHE VEL3_1 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
 #    "02" EHN VEL3_2 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
 #    "02" EHZ VEL3_3 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL

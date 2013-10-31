@@ -10,8 +10,8 @@ begin_station
   
   begin_sensor
 # sensor first buried temporaly
-# july 2012 sensor installed in the shelter
-# septembre september 29th sensor buried in a can in the middle of the area
+# 2012 july sensor installed in the shelter
+# 2012 september 29th sensor buried in a can in the middle of the area
 #  EW, NS, et Z
     VEL1 CMG40T "none" "sensor/CMG40T.T4M89.E.2007_01_16.present" 90.000 0.000
     VEL2 CMG40T "none" "sensor/CMG40T.T4M89.N.2007_01_16.present" 0.000 0.000
@@ -28,10 +28,17 @@ begin_station
   
 #  reftek 9632
   begin_channel
-    "00" HHE VEL1 none DIG1 none 2011.05.11-00:00:00 present CL
-    "00" HHN VEL2 none DIG1 none 2011.05.11-00:00:00 present CL
-    "00" HHZ VEL3 none DIG1 none 2011.05.11-00:00:00 present CL
+    "00" HHE VEL1 none DIG1 none 2011.05.11-00:00:00 2013.06.19-12:00:00 CL
+    "00" HHN VEL2 none DIG1 none 2011.05.11-00:00:00 2013.06.19-12:00:00 CL
+    "00" HHZ VEL3 none DIG1 none 2011.05.11-00:00:00 2013.06.19-12:00:00 CL
+    "00" HHE VEL1 REF32 DIG1 none 2013.06.19-12:00:01 present CL
+    "00" HHN VEL2 REF32 DIG1 none 2013.06.19-12:00:01 present CL
+    "00" HHZ VEL3 REF32 DIG1 none 2013.06.19-12:00:01 present CL
   end_channel
-  
+# fevrier 2013 changement de reftek 9635 gain 1??
+# mai 2013  changement de reftek 9632 gain 1?
+# juin 2013 changement de reftek 9AFD gain 32 le 19 juin
+
+
 end_station
 

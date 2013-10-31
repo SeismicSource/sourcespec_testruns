@@ -58,7 +58,8 @@ begin_station
     "00" EHN VEL2 none DIG3 none 2010.07.05-13:00:10 2012.06.20-12:50:00 CL
     "00" EHZ VEL3 none DIG3 none 2010.07.05-13:00:10 2012.06.20-12:50:00 CL
 
-#  septième periode reftek 9631 gain 32
+#  septième periode reftek 9631 gain 32, en mai 2013 on a la A035
+# fin septembre 2013 reftek 9632
     "00" EHE VEL1 REF32 DIG3 none 2012.06.20-12:50:00 present CL
     "00" EHN VEL2 REF32 DIG3 none 2012.06.20-12:50:00 present CL
     "00" EHZ VEL3 REF32 DIG3 none 2012.06.20-12:50:00 present CL

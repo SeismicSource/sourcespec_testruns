@@ -1,0 +1,48 @@
+88.197.4.1 router
+
+88.197.4.13 crl-fr
+88.197.4.11 crl-sl
+88.197.4.10 crl-rt
+
+# valeurs à la suite de la visite de Maurin de mi-juin 2013
+10.254.84.51 gps-eypa
+10.254.84.73 gps-koun
+10.254.84.56 gps-lido
+10.254.84.41 gps-psar
+10.254.84.16 gps-triz
+ 
+# sismologie
+10.254.84.10 sis-psar
+10.254.84.16 sis-triz
+10.254.84.20 sis-rodi
+10.254.84.31 sis-pyrg
+10.254.84.65 sis-ziri
+10.254.84.66 sis-rod3
+10.254.84.55 sis-dimt
+10.254.84.52 sis-aioa
+10.254.84.53 sis-ageo
+10.254.84.58 sis-panr
+10.254.84.59 sis-alik
+10.254.84.64 sis-mala
+10.254.84.69 sis-agrp
+
+# deformation
+10.254.84.57 def-trie
+10.254.84.62 def-riza
+10.254.84.67 def-mok 
+
+# antenne
+10.254.84.64 sis-mg00
+10.254.84.72 sis-mg02
+10.254.84.54 sis-mg03
+10.254.84.50 sis-mg04
+10.254.84.72 sis-mg05
+10.254.84.70 sis-mg06
+10.254.84.71 sis-mg07
+
+# non utilise
+10.254.84.60 sis-XXXX
+10.254.84.61 sis-YYYY
+10.254.84.63 sis-ZZZZ                                                                                                           
+#
+129.199.70.53 ephesite

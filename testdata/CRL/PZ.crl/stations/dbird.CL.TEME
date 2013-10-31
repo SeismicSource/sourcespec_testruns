@@ -50,6 +50,7 @@ begin_station
 #  changement de gain vers gain 32 
 # arret en décembre 2012 (coupure du courant
 # remise de la reftek 98A7 en Fevrier 2013 du 5 au 6 gain 1, gain 32 retabli le06/02 à 9h20 
+# remplacement par la reftek ACCB voies 1, 2, 3 en fin septembre 2013
     "00" EHE VEL1 REF32 DIG2 none 2011.06.15-05:54:00 present CL
     "00" EHN VEL2 REF32 DIG2 none 2011.06.15-05:54:00 present CL
     "00" EHZ VEL3 REF32 DIG2 none 2011.06.15-05:54:00 present CL

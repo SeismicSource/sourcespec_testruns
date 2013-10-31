@@ -2,7 +2,7 @@ originating_organization "CRLNET INSU/CNRS, Paris, France"
 network_list CL
 begin_station
    #  verifier la profondeur du capteur
-  ALI 2000.04.16-10:00:00 present 38.26051 22.11135 37.00 70.00 "Aliki, Aigion, Greece"
+  ALI 2000.04.16-10:00:00 2010.07.05-17:20:00 38.26051 22.11135 37.00 70.00 "Aliki, Aigion, Greece"
   Owner "INSU"
   
   begin_location
@@ -25,28 +25,11 @@ begin_station
    # 
   begin_ana_filter
     GAIN1 "ana_filter/crl_gain5"
-
-#  a utiliser avec les taurus pour differencier le type d'impedance
-#  et le gain
-#  40 Vpp
-    T_HI "ana_filter/taurus_hi.0_4"
-    T_LO "ana_filter/taurus_lo.0_4"
-#  16 Vpp
-    T_HI1 "ana_filter/taurus_hi.1"
-    T_LO1 "ana_filter/taurus_lo.1"
-#   8 Vpp
-    T_HI2 "ana_filter/taurus_hi.2"
-    T_LO2 "ana_filter/taurus_lo.2"
-#   4 Vpp
-    T_HI4 "ana_filter/taurus_hi.4"
-    T_LO4 "ana_filter/taurus_lo.4"
   end_ana_filter
   
   begin_digitizer
     DIG1 "digitizer/titan.CS5323.125"
     DIG2 "digitizer/titan.CS5323.250"
-    DIG3 "digitizer/taurus.off.100"
-    DIG4 "digitizer/taurus.on.100"
   end_digitizer
   
   begin_decimation
@@ -55,7 +38,7 @@ begin_station
   
   begin_channel
     
-     #  quand les comosantes horizontales de surface ont-elles ete mises?
+#  quand les composantes horizontales de surface ont-elles ete mises?
     
 #  premiere periode titanNT 250004
     "00" EHE VEL1 GAIN1 DIG1 none 2000.04.16-16:00:00 2002.09.29-09:45:00 CL
@@ -74,23 +57,6 @@ begin_station
     "01" EHE VEL1 GAIN1 DIG2 none 2007.06.14-15:50:00 2010.07.05-17:20:00 CL
     "01" EHN VEL2 GAIN1 DIG2 none 2007.06.14-15:50:00 2010.07.05-17:20:00 CL
     "01" EHZ VEL3 GAIN1 DIG2 none 2007.06.14-15:50:00 2010.07.05-17:20:00 CL
-    
-#  on prend en compte les composantes de surface
-#  en principe loc 02, mais on duplique loc 00 
-#  car on ne fait pas la difference dans le traitement
-#  quatrieme periode taurus 1736 gain 8Vpp verifie sur log apollo de octobre 2010
-    "00" EHE VEL4 T_HI2 DIG3 none 2010.07.05-17:22:00 2011.06.15-17:22:00 CL
-    "00" EHN VEL5 T_HI2 DIG3 none 2010.07.05-17:22:00 2011.06.15-17:22:00 CL
-    "00" EHZ VEL3 T_HI2 DIG3 none 2010.07.05-17:22:00 2011.06.15-17:22:00 CL
-    "02" EHE VEL4 T_HI2 DIG3 none 2010.07.05-17:22:00 2011.06.15-17:22:00 CL
-    "02" EHN VEL5 T_HI2 DIG3 none 2010.07.05-17:22:00 2011.06.15-17:22:00 CL
-
-#  quatrieme periode taurus 1736 changement de gain a verifier
-    "00" EHE VEL4 T_HI2 DIG3 none 2011.06.15-17:22:01 present CL
-    "00" EHN VEL5 T_HI2 DIG3 none 2011.06.15-17:22:01 present CL
-    "00" EHZ VEL3 T_HI2 DIG3 none 2011.06.15-17:22:01 present CL
-    "02" EHE VEL4 T_HI2 DIG3 none 2011.06.15-17:22:01 present CL
-    "02" EHN VEL5 T_HI2 DIG3 none 2011.06.15-17:22:01 present CL
 
   end_channel
 end_station
