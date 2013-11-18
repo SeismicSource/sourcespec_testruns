@@ -20,14 +20,31 @@ begin_station
   end_ana_filter
   
   begin_digitizer
+
+# a vérifier
     DIG1 "digitizer/reftek130.100"
+
+# changement pour un numériseur guralp en juin 2013
+    DIG2_1 "digitizer/guralp.dm24_A2959_1_TTL23.100"
+    DIG2_2 "digitizer/guralp.dm24_A2959_2_TTL23.100"
+    DIG2_3 "digitizer/guralp.dm24_A2959_3_TTL23.100"
+    DIG2_4 "digitizer/guralp.dm24_A2959_4_TTL23.100"
+    DIG2_5 "digitizer/guralp.dm24_A2959_5_TTL23.100"
+    DIG2_6 "digitizer/guralp.dm24_A2959_6_TTL23.100"
   end_digitizer
   
   begin_channel
 #  reftek 9E22 
-    "00" HHE VEL1 none DIG1 none 2008.09.05-00:00:00 present HA
-    "00" HHN VEL2 none DIG1 none 2008.09.05-00:00:00 present HA
-    "00" HHZ VEL3 none DIG1 none 2008.09.05-00:00:00 present HA
+    "00" HHE VEL1 none DIG1 none 2008.09.05-00:00:00 2013.05.17-00:00:00 HA
+    "00" HHN VEL2 none DIG1 none 2008.09.05-00:00:00 2013.05.17-00:00:00 HA
+    "00" HHZ VEL3 none DIG1 none 2008.09.05-00:00:00 2013.05.17-00:00:00 HA
+# changement pour un numériseur Guralp
+    "00" HHE VEL1 none DIG2_3 none 2013.05.17-00:00:01 present HA
+    "00" HHN VEL2 none DIG2_2 none 2013.05.17-00:00:01 present HA
+    "00" HHZ VEL3 none DIG2_1 none 2013.05.17-00:00:01 present HA
+
   end_channel
   
 end_station
+
+

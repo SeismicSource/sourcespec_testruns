@@ -53,8 +53,8 @@ begin_station
 
    begin_channel
 # les reftek se sont succedees
-#     2005:294-2009:159 918C, 2009:161-2010:184 98A7, 2010:187-2010:293 918C, 2010:293-present ACCB
-# ensuite on a la B372 ...
+#     2005:294-2009:159 918C, 2009:161-2010:184 98A7, 2010:187-2010:293 918C, 2010:293-???? ACCB
+#     ensuite on a la B372  installee le jour 297 2011 (encore la le 19.10.2013) ...
 # on note 1.042mv/bit et 104.2 mV/bit comme info gain jour 184/2010.
       "00" HHE VEL1_1 none  DIG1 none 2005.10.21-00:00:00 2010.10.20-00:00:00 CL
       "00" HHN VEL1_2 none  DIG1 none 2005.10.21-00:00:00 2010.10.20-00:00:00 CL
