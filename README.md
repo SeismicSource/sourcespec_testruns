@@ -1,4 +1,4 @@
-# source_spec
+# SourceSpec
 **Earthquake source parameters from S-wave displacement spectra**
 
 ## Sample runs
