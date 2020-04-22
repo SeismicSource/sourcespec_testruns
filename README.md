@@ -11,7 +11,7 @@ SourceSpec is a collection of three command line programs (written in
 Python): `source_spec`, `source_model` and `source_residuals`.
 
 The code is available at
-[github.com/claudiodsf/sourcespec](https://github.com/claudiodsf/sourcespec).
+[github.com/SeismicSource/sourcespec](https://github.com/SeismicSource/sourcespec).
 
 ## source_spec
 
