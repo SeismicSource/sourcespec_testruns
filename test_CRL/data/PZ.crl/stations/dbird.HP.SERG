@@ -1,0 +1,42 @@
+originating_organization "PATNET University of Patras, Greece"
+network_list HP
+begin_station
+  SERG 1999.09.20-00:00:00 present 38.4133 22.0566 480. 0.0 "Sergoula, Dorida, Central Greece, Greece"
+  Owner "UP/Prague"
+  
+  begin_location
+    Location "00" 38.4133 22.0566 480. 0.0 SERG
+  end_location
+  
+  begin_sensor
+#  EW, NS, et Z capteur T3524 CMG3T 120sec
+    VEL1 CMG3T "none" "sensor/CMG3T.T3524.E.1997_06_24.present" 90.000 0.000
+    VEL2 CMG3T "none" "sensor/CMG3T.T3524.N.1997_06_24.present" 0.000 0.000
+    VEL3 CMG3T "none" "sensor/CMG3T.T3524.Z.1997_06_24.present" 0.000 -90.000
+#  EW, NS, et Z capteur T5256 
+    ACC1 CMG5T "none" "sensor/CMG5T.T5256.E.2003_02_27.present" 90.000 0.000
+    ACC2 CMG5T "none" "sensor/CMG5T.T5256.N.2003_02_27.present" 0.000 0.000
+    ACC3 CMG5T "none" "sensor/CMG5T.T5256.Z.2003_02_27.present" 0.000 -90.000
+  end_sensor
+  
+  begin_digitizer
+#  Guralp DM24 DF34 1 = 1.281, 2= 1.277, 3=1.275 microV/bits dm24-mk3
+    DIG1 "digitizer/guralp.dm24_DF34_1.100"
+    DIG2 "digitizer/guralp.dm24_DF34_2.100"
+    DIG3 "digitizer/guralp.dm24_DF34_3.100"
+#  Guralp DM24 D0313 = 2.563, 2= 2.538, 3=2.550 microV/bits dm24-mk3
+    DIG4 "digitizer/guralp.dm24_D0313_1.100"
+    DIG5 "digitizer/guralp.dm24_D0313_2.100"
+    DIG6 "digitizer/guralp.dm24_D0313_3.100"
+  end_digitizer
+  
+  begin_channel
+    "00" HHE VEL1 none DIG3 none 1999.09.20-08:00:00 present HP
+    "00" HHN VEL2 none DIG2 none 1999.09.20-08:00:00 present HP
+    "00" HHZ VEL3 none DIG1 none 1999.09.20-08:00:00 present HP
+    "00" HNE ACC1 none DIG6 none 2000.11.09-09:00:00 present HP
+    "00" HNN ACC2 none DIG5 none 2000.11.09-09:00:00 present HP
+    "00" HNZ ACC3 none DIG4 none 2000.11.09-09:00:00 present HP
+  end_channel
+  
+end_station

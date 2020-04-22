@@ -1,0 +1,36 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL
+begin_station
+  KAL 2001.06.08-10:00:00 present 38.39103 22.13977 789.0 00.000 "Kalithea, Nafpaktos, Greece"
+  Owner "INSU"
+  
+  begin_location
+    Location "00" 38.39103 22.13977 789.0 00.000 KAL
+  end_location
+  
+  begin_sensor
+#  NS, EW, et Z, Z inverse
+    VEL1 L22 "none" "sensor/L22" 90.000 0.000
+    VEL2 L22 "none" "sensor/L22" 0.000 0.000
+    VEL3 L22 "none" "sensor/L22" 0.000 -90.000
+  end_sensor
+     
+  begin_digitizer
+    DIG1 "digitizer/titan.HI7190.125"
+    DIG2 "digitizer/titan.CS5321.125"
+  end_digitizer
+  
+  begin_channel
+#  premiere periode minititan3XT ipgp-2, ipgp, 020083, 020086, 020083, 020086
+    "00" EHE VEL1 none DIG1 none 2001.06.08-10:00:00 2009.07.20-14:20:00 CL
+    "00" EHN VEL2 none DIG1 none 2001.06.08-10:00:00 2009.07.20-14:20:00 CL
+    "00" EHZ VEL3 none DIG1 none 2001.06.08-10:00:00 2009.07.20-14:20:00 CL
+#  deuxieme periode titan3XT 110019
+    "00" EHE VEL1 none DIG2 none 2009.07.20-14:20:01 2011.01.01-15:20:00 CL
+    "00" EHN VEL2 none DIG2 none 2009.07.20-14:20:01 2011.01.01-15:20:00 CL
+    "00" EHZ VEL3 none DIG2 none 2009.07.20-14:20:01 2011.01.01-15:20:00 CL
+  end_channel
+  
+#  fin de la station crl remplacee par KALE gérée par Athenes
+end_station
+

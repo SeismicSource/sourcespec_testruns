@@ -1,0 +1,46 @@
+originating_organization "ATHNET University of Athens, Greece"
+network_list HA
+begin_station
+  TRAZ 2010.09.27-00:00:00 present 38.1685 22.2121 668. 0.0 "Trapeza, Greece"
+  Owner "NTUA"
+  
+  begin_location
+    Location "00" 38.1685 22.2121 668. 0.0 TRAZ
+  end_location
+  
+  begin_sensor
+#  EW, NS, et Z capteur T4704 CMG40T 30sec
+    VEL1 CMG40T "none" "sensor/CMG40T.T4704.E.1998_10_15.present" 90.000 0.000
+    VEL2 CMG40T "none" "sensor/CMG40T.T4704.N.1998_10_15.present" 0.000 0.000
+    VEL3 CMG40T "none" "sensor/CMG40T.T4704.Z.1998_10_15.present" 0.000 -90.000
+  end_sensor
+   # 
+  begin_ana_filter
+    REF32 "ana_filter/reftek_gain32"
+  end_ana_filter
+  
+  begin_digitizer
+# c'est une reftek 72.....
+    DIG1 "digitizer/reftek130.100"
+# changement le ....
+    DIG2_1 "digitizer/guralp.dm24_A2957_1_TTL23.100"
+    DIG2_2 "digitizer/guralp.dm24_A2957_2_TTL23.100"
+    DIG2_3 "digitizer/guralp.dm24_A2957_3_TTL23.100"
+    DIG2_4 "digitizer/guralp.dm24_A2957_4_TTL23.100"
+    DIG2_5 "digitizer/guralp.dm24_A2957_5_TTL23.100"
+    DIG2_6 "digitizer/guralp.dm24_A2957_6_TTL23.100"
+
+  end_digitizer
+  
+  begin_channel
+#  reftek REF72A 1116
+    "00" HHE VEL1 none DIG1 none 2010.09.27-00:00:00 2011.09.27-00:00:00 HA
+    "00" HHN VEL2 none DIG1 none 2010.09.27-00:00:00 2011.09.27-00:00:00 HA
+    "00" HHZ VEL3 none DIG1 none 2010.09.27-00:00:00 2011.09.27-00:00:00 HA
+# changement pour un numériseur Guralp
+    "00" HHE VEL1 none DIG2_3 none 2011.09.27-00:00:01 present HA
+    "00" HHN VEL2 none DIG2_2 none 2011.09.27-00:00:01 present HA
+    "00" HHZ VEL3 none DIG2_1 none 2011.09.27-00:00:01 present HA
+  end_channel
+  
+end_station

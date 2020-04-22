@@ -1,1 +1,4 @@
+# Directories and files created at runtime
 sspec_out/
+maptiles/
+*.sqlite

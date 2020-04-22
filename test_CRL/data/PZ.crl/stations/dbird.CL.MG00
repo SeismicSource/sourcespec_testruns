@@ -1,0 +1,275 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL 
+begin_station
+   MG00 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "00" 38.41498 21.9470736 142. .05 MG00
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG00 857, MG01 1069
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+# numeriseur 6 voies 3878 couple a EAM 4828 installe au debut
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A3878_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A3878_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A3878_3_TTL23.100"
+
+# numeriseur changé pour un 3 voies en fin juillet 2013 
+# GPS non connecté???
+      DIG4 "digitizer/guralp.dm24_A4033_1_TTL23.100"
+      DIG5 "digitizer/guralp.dm24_A4033_2_TTL23.100"
+      DIG6 "digitizer/guralp.dm24_A4033_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "00" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "00" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "00" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "00" HHE VEL1 none DIG6 none 2013.07.10-01:00:00 present CL
+      "00" HHN VEL2 none DIG5 none 2013.07.10-01:00:00 present CL
+      "00" HHZ VEL3 none DIG4 none 2013.07.10-01:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG01 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "01" 38.41498 21.9470736 142. .05 MG01
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG00 857, MG01 1069
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+# numeriseur 6 voies avec MG00
+      DIG4 "digitizer/guralp.dm24_A3878_4_TTL23.100"
+      DIG5 "digitizer/guralp.dm24_A3878_5_TTL23.100"
+      DIG6 "digitizer/guralp.dm24_A3878_6_TTL23.100"
+# numériseur 3 voies ajouté en septembre
+      DIG1 "digitizer/guralp.dm24_A4039_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4039_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4039_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "01" HHE VEL1 none DIG6 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "01" HHN VEL2 none DIG5 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "01" HHZ VEL3 none DIG4 none 2012.12.15-00:00:00 2013.07.10-00:00:00 CL
+      "01" HHE VEL1 none DIG6 none 2013.09.20-00:00:00 present CL
+      "01" HHN VEL2 none DIG5 none 2013.09.20-00:00:00 present CL
+      "01" HHZ VEL3 none DIG4 none 2013.09.20-00:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG02 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "02" 38.41498 21.9470736 142. .05 MG02
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG02 859
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A4035_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4035_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4035_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "02" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "02" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "02" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG03 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "03" 38.41498 21.9470736 142. .05 MG03
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG03 858
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A4038_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4038_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4038_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "03" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "03" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "03" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG04 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "04" 38.41498 21.9470736 142. .05 MG04
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG04 486
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A4034_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4034_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4034_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "04" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "04" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "04" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG05 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "05" 38.41498 21.9470736 142. .05 MG05
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG05 856
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A4036_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4036_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4036_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "05" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "05" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "05" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG06 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "06" 38.41498 21.9470736 142. .05 MG06
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG06 1070
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A4037_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4037_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4037_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "06" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "06" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "06" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 
+
+begin_station
+   MG07 2013.02.05-00:00:00 present 38.41498 21.9470736 142. .05 "Magoula Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "07" 38.41498 21.9470736 142. .05 MG07
+   end_location
+
+   begin_sensor
+# la réponse des T40 est la même pour tous
+# pas de différence notée pour les différentes séries.
+# MG07 498
+# EW, NS, et Z
+      VEL1 T40 "none" "sensor/T40" 90.000 0.000
+      VEL2 T40 "none" "sensor/T40" 0.0 0.000
+      VEL3 T40 "none" "sensor/T40" 0.000 -90.000
+   end_sensor
+#
+   begin_digitizer
+      DIG1 "digitizer/guralp.dm24_A4032_1_TTL23.100"
+      DIG2 "digitizer/guralp.dm24_A4032_2_TTL23.100"
+      DIG3 "digitizer/guralp.dm24_A4032_3_TTL23.100"
+   end_digitizer
+
+   begin_channel
+      "07" HHE VEL1 none DIG3 none 2012.12.15-00:00:00 present CL
+      "07" HHN VEL2 none DIG2 none 2012.12.15-00:00:00 present CL
+      "07" HHZ VEL3 none DIG1 none 2012.12.15-00:00:00 present CL
+   end_channel
+
+end_station 

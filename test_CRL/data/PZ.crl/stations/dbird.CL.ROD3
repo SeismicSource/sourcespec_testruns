@@ -1,0 +1,44 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL
+begin_station
+  ROD3 2011.05.11-00:00:00 present 38.30811 21.89204 448.00 00.00 "Rodini, Patras, West Greece, Greece"
+  Owner "INSU"
+  
+  begin_location
+    Location "00" 38.30811 21.89204 448.00 0.00 ROD3
+  end_location
+  
+  begin_sensor
+# sensor first buried temporaly
+# 2012 july sensor installed in the shelter
+# 2012 september 29th sensor buried in a can in the middle of the area
+#  EW, NS, et Z
+    VEL1 CMG40T "none" "sensor/CMG40T.T4M89.E.2007_01_16.present" 90.000 0.000
+    VEL2 CMG40T "none" "sensor/CMG40T.T4M89.N.2007_01_16.present" 0.000 0.000
+    VEL3 CMG40T "none" "sensor/CMG40T.T4M89.Z.2007_01_16.present" 0.000 -90.000
+  end_sensor
+# 
+  begin_ana_filter
+    REF32 "ana_filter/reftek_gain32"
+  end_ana_filter
+  
+  begin_digitizer
+    DIG1 "digitizer/reftek130.100"
+  end_digitizer
+  
+#  reftek 9632
+  begin_channel
+    "00" HHE VEL1 none DIG1 none 2011.05.11-00:00:00 2013.06.19-12:00:00 CL
+    "00" HHN VEL2 none DIG1 none 2011.05.11-00:00:00 2013.06.19-12:00:00 CL
+    "00" HHZ VEL3 none DIG1 none 2011.05.11-00:00:00 2013.06.19-12:00:00 CL
+    "00" HHE VEL1 REF32 DIG1 none 2013.06.19-12:00:01 present CL
+    "00" HHN VEL2 REF32 DIG1 none 2013.06.19-12:00:01 present CL
+    "00" HHZ VEL3 REF32 DIG1 none 2013.06.19-12:00:01 present CL
+  end_channel
+# fevrier 2013 changement de reftek 9635 gain 1??
+# mai 2013  changement de reftek 9632 gain 1?
+# juin 2013 changement de reftek 9AFD gain 32 le 19 juin
+
+
+end_station
+

@@ -1,0 +1,32 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL
+begin_station
+# station du reseau temporaire du côté de la station permanente
+# mais distance assez grande
+  KOUT 2000.02.23-10:00:00 present 38.2219 22.0371 378.0 0.000 "Kouloura, Aigion, Greece"
+  Owner "INSU"
+  
+  begin_location
+    Location "00" 38.2219 22.0371 378.0 0.000 KOUT
+  end_location
+  
+  begin_sensor
+     #  NS, EW, et Z
+    VEL1 L22 "none" "sensor/L22" 90.000 0.000
+    VEL2 L22 "none" "sensor/L22" 0.000 0.000
+    VEL3 L22 "none" "sensor/L22" 0.000 -90.000
+  end_sensor
+  
+  begin_digitizer
+    DIG1 "digitizer/titan.CS5323.125"
+  end_digitizer
+  
+  begin_channel
+
+    "00" EHE VEL1 none  DIG1 none 2002.02.18-15:28:00 2002.06.24-14:57:00 CL
+    "00" EHN VEL2 none  DIG1 none 2002.02.18-15:28:00 2002.06.24-14:57:00 CL
+    "00" EHZ VEL3 none  DIG1 none 2002.02.18-15:28:00 2002.06.24-14:57:00 CL
+
+  end_channel
+end_station
+

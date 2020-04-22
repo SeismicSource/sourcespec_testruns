@@ -1,0 +1,59 @@
+# ne sont mises que les infos concernant la station titan
+# 00 pour la deuxieme location TRI= TRZ (on garde une description de TRI du début en 01)
+# Il faudrait regarder un peu plus les coordonnées relatives
+
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL 
+begin_station
+# mesure GPS reftek 2010 sur 918C a TRI  38.36543,  22.07272 59
+   TRZ 2000.04.17-09:00:00 2010.05.12-12:00:00 38.36543 22.07272 59. 0. "Trizonia, Dorida, Central Greece, Greece"
+   Owner "INSU"
+
+   begin_location
+      Location "01" 38.36543 22.07272 59. 2. TRZ
+      Location "00" 38.36543 22.07272 59. 2. TRZ
+   end_location
+
+   begin_sensor
+#  NS, EW, et Z
+    VEL1 L22 "none" "sensor/L22-puits" 90.000 0.000
+    VEL2 L22 "none" "sensor/L22-puits" 0.000 0.000
+    VEL3 L22 "none" "sensor/L22-puits" 0.000 -90.000
+  end_sensor
+#
+  begin_ana_filter
+    GAIN1 "ana_filter/crl_gain5"
+  end_ana_filter
+
+  begin_digitizer
+    DIG1 "digitizer/titan.CS5323.125"
+    DIG2 "digitizer/titan.HI7190.125"
+
+  end_digitizer
+
+  begin_channel
+#  premiere periode titanNT 250007
+    "01" EHE VEL1 GAIN1 DIG1 none 2000.04.17-09:00:00 2001.06.16-10:50:00 CL
+    "01" EHN VEL2 GAIN1 DIG1 none 2000.04.17-09:00:00 2001.06.16-10:50:00 CL
+    "01" EHZ VEL3 GAIN1 DIG1 none 2000.04.17-09:00:00 2001.06.16-10:50:00 CL
+#  deuxieme periode minitan3XT TBD
+    "01" EHE VEL1 none DIG2 none 2001.06.16-11:00:00 2001.06.28-12:35:00 CL
+    "01" EHN VEL2 none DIG2 none 2001.06.16-11:00:00 2001.06.28-12:35:00 CL
+    "01" EHZ VEL3 none DIG2 none 2001.06.16-11:00:00 2001.06.28-12:35:00 CL
+#  troisieme periode titanNT 250007
+    "01" EHE VEL1 GAIN1 DIG1 none 2001.06.28-12:40:00 2002.07.11-14:30:00 CL
+    "01" EHN VEL2 GAIN1 DIG1 none 2001.06.28-12:40:00 2002.07.11-14:30:00 CL
+    "01" EHZ VEL3 GAIN1 DIG1 none 2001.06.28-12:40:00 2002.07.11-14:30:00 CL
+#  quatrieme on change de site, en 2004 passage à 250009
+    "00" EHE VEL1 GAIN1 DIG1 none 2002.07.11-14:50:00 2006.01.15-09:50:00 CL
+    "00" EHN VEL2 GAIN1 DIG1 none 2002.07.11-14:50:00 2006.01.15-09:50:00 CL
+    "00" EHZ VEL3 GAIN1 DIG1 none 2002.07.11-14:50:00 2006.01.15-09:50:00 CL
+#  cinquieme periode minitan3XT 020087
+    "00" EHE VEL1 none DIG2 none 2006.01.15-10:00:00 2010.05.12-12:00:00 CL
+    "00" EHN VEL2 none DIG2 none 2006.01.15-10:00:00 2010.05.12-12:00:00 CL
+    "00" EHZ VEL3 none DIG2 none 2006.01.15-10:00:00 2010.05.12-12:00:00 CL
+  end_channel
+# station fermée
+
+end_station
+

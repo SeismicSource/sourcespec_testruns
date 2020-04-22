@@ -1,0 +1,70 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL
+begin_station
+   #  localisations à revoir eventuellement
+  ZIRI 2010.07.04-00:00:00 present 38.30519 21.94761 506.00 00.00 "Ziria, Aigialia, West Greece, Greece"
+  Owner "INSU"
+  
+  begin_location
+     #  premiere implantation fin decembre 2010
+    Location "00" 38.30896 21.95316 479.00 00.00 ZIRI
+     #  implantation en mai 2011
+    Location "01" 38.30519 21.947613 506.00 0.00 ZIRI
+    Location "02" 38.30519 21.947613 506.00 0.00 ZIRI
+  end_location
+  
+  begin_sensor
+#  EW, NS, et Z
+    VEL1_1 CMG40T "none" "sensor/CMG40T.T4H14.E.2008_12_10.present" 90.000 0.000
+    VEL1_2 CMG40T "none" "sensor/CMG40T.T4H14.N.2008_12_10.present" 0.000 0.000
+    VEL1_3 CMG40T "none" "sensor/CMG40T.T4H14.Z.2008_12_10.present" 0.000 -90.000
+# capteur elargi N° 555 enterré installé sur nouveau site en 2011 a cote station
+    VEL2_1 L22 "none" "sensor/L22-elargi" 90.000 0.000
+    VEL2_2 L22 "none" "sensor/L22-elargi" 0.000 0.000
+    VEL2_3 L22 "none" "sensor/L22-elargi" 0.000 -90.000
+# second capteur N° 3042 556 installe par Cyrille et Alex plus tard en 2011
+# dans  la cave voutée composante NS HS
+    VEL3_1 L22 "none" "sensor/L22-elargi" 90.000 0.000
+    VEL3_2 L22 "none" "sensor/L22-elargi" 0.000 0.000
+    VEL3_3 L22 "none" "sensor/L22-elargi" 0.000 -90.000
+# changement du capteur : on garde le 3 composantes (555) complet dans la cave voutée
+
+  end_sensor
+# 
+  begin_ana_filter
+    REF32 "ana_filter/reftek_gain32"
+  end_ana_filter
+  
+  begin_digitizer
+    DIG1 "digitizer/reftek130.100"
+  end_digitizer
+  
+  begin_channel
+#  premiere periode reftek 98A7 + CMG40 T4H14
+# composante Z inversee
+    "00" HHE VEL1_1 none DIG1 none 2010.07.04-10:00:00 2010.12.31-18:30:00 CL
+    "00" HHN VEL1_2 none DIG1 none 2010.07.04-10:00:00 2010.12.31-18:30:00 CL
+    "00" HHZ VEL1_3 none DIG1 none 2010.07.04-10:00:00 2010.12.31-18:30:00 CL
+#  deuxieme periode reftek + elargi
+    "01" EHE VEL2_1 none DIG1 none 2011.06.15-18:00:00 2012.06.19-15:00:00 CL
+    "01" EHN VEL2_2 none DIG1 none 2011.06.15-18:00:00 2012.06.19-15:00:00 CL
+    "01" EHZ VEL2_3 none DIG1 none 2011.06.15-18:00:00 2012.06.19-15:00:00 CL
+# ajout second capteur composante NS HS 
+    "02" EHE VEL3_1 none DIG1 none 2011.12.14-00:00:00 present CL
+    "02" EHN VEL3_2 none DIG1 none 2011.12.14-00:00:00 present CL
+    "02" EHZ VEL3_3 none DIG1 none 2011.12.14-00:00:00 present CL
+# le 2012.06.19-15:00:00 deplacement capteur 2 a la place du 3
+#      mais la reponse ne change pas donc on n'en tient pas compte
+#      pour etre complet on aurait
+# juin 2013 reftek 981C
+#    "02" EHE VEL3_1 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
+#    "02" EHN VEL3_2 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
+#    "02" EHZ VEL3_3 none DIG1 none 2011.12.14-00:00:00 2012.06.19-15:00:00 CL
+#    "02" EHE VEL2_1 none DIG1 none 2012.06.19-15:00:10 present CL
+#    "02" EHN VEL2_2 none DIG1 none 2012.06.19-15:00:10 present CL
+#    "02" EHZ VEL2_3 none DIG1 none 2012.06.19-15:00:10 present CL
+
+  end_channel
+  
+end_station
+

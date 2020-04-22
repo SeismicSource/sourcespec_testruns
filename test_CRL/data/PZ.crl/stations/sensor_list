@@ -1,0 +1,38 @@
+# File sensor_list
+#
+# This file is mandatory and must be locate in the directory
+# pointed to by $RESPDB or $PZ.
+# It must contain all types of sensors used in the RESPDB or
+# BDsis databases.
+#
+# Sensors types:
+#     - It must be found in the KINST field of SAC headers.
+#     - Please use upper case in names and types
+#     - do no use "-" nor "_"
+#     - sub-set of sensor (those which can be set with different
+#       parameters are followed by a lowcase letter.
+
+# name  type     period      description
+
+STS2     VEL     LP  		STS2
+STS2L    VEL     LP  		STS2 low power
+
+CMG5T    ACC     LP 		CMG5T
+CMG5HP   ACC     LP 		CMG5T with high pass filter
+CMG3T    VEL     LP  		CMG3T
+CMG3ESP  VEL     LP  		CMG3ESP
+CMG40T   VEL     LP  		CMG40T
+CMGSP1   VEL     LP  		CMGSP1
+
+EST      ACC     LP 		EpiSensor EST
+
+L22      VEL     CP  		L22 Mark product 2 Hz
+L4C      VEL     CP  		L4C Mark Product 1 Hz
+
+CDJ      VEL     CP  		Chinese sensor
+
+T40      VEL     LP  		Nanometrics broad band 40s
+T120     VEL     LP  		Nanometrics broad band 120s
+T240     VEL     LP  		Nanometrics broad band 240s
+TCOMPACT VEL     LP  		Nanometrics compact
+

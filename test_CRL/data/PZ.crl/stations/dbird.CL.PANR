@@ -1,0 +1,44 @@
+originating_organization "CRLNET INSU/CNRS, Paris, France"
+network_list CL
+# on considere PANR pour les donnees reftek
+begin_station
+  PANR 2001.06.08-10:00:00 present 38.37352 22.24975 149.0 00.000 "Panormos, Dorida, Central Greece, Greece"
+  Owner "INSU"
+  
+  begin_location
+#  localisation avec le GPS reftek sur long 38.37346,  22.24976 107
+    Location "00" 38.37352 22.24975 149.0 00.000 PANR
+  end_location
+  
+  begin_sensor
+#  EW, NS, et Z, Z inverse
+    VEL1 L22 "none" "sensor/L22" 90.000 0.000
+    VEL2 L22 "none" "sensor/L22" 0.000 0.000
+    VEL3 L22 "none" "sensor/L22" 0.000 -90.000
+    VEL4 L22 "none" "sensor/L22" 75.000 0.000
+    VEL5 L22 "none" "sensor/L22" 345.000 0.000
+  end_sensor
+# 
+  begin_ana_filter
+    REF32 "ana_filter/reftek_gain32"
+  end_ana_filter
+  
+  begin_digitizer
+    DIG3 "digitizer/reftek130.100"
+  end_digitizer
+  
+  begin_channel
+    
+#  troisieme periode reftek 9631
+    "00" EHE VEL4 none DIG3 none 2010.07.05-15:50:00 2012.09.30-00:23:00 CL
+    "00" EHN VEL5 none DIG3 none 2010.07.05-15:50:00 2012.09.30-00:23:00 CL
+    "00" EHZ VEL3 none DIG3 none 2010.07.05-15:50:00 2012.09.30-00:23:00 CL
+
+#  quatrieme periode reftek 9631 gain 32
+    "00" EHE VEL4 ref32 DIG3 none 2012.09.30-00:23:02 present CL
+    "00" EHN VEL5 ref32 DIG3 none 2012.09.30-00:23:02 present CL
+    "00" EHZ VEL3 ref32 DIG3 none 2012.09.30-00:23:02 present CL
+  end_channel
+  
+end_station
+

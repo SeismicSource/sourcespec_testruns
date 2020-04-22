@@ -1,0 +1,30 @@
+originating_organization "PATRAS University Greece"
+network_list HP
+begin_station
+   #  verifier la profondeur du capteur
+  VVK 2010.07.01-10:00:00 present 38.42235 21.8115 650.0 00.000 "Vomvokou, Nafpaktos, Greece"
+  Owner "INSU"
+  
+  begin_location
+    Location "00" 38.42235 21.8115 650.0 00.000 VVK
+  end_location
+  
+  begin_sensor
+     #  EW, NS, et Z capteur elargi de Patras
+    VEL1 L22 "none" "sensor/S100_patras" 90.000 0.000
+    VEL2 L22 "none" "sensor/S100_patras" 0.000 0.000
+    VEL3 L22 "none" "sensor/S100_patras" 0.000 -90.000
+  end_sensor
+   # 
+  begin_digitizer
+    DIG1 "digitizer/SR24_patras"
+  end_digitizer
+  
+  begin_channel
+    "00" EHE VEL1 none DIG1 none 2010.07.01-10:00:00 present HP
+    "00" EHN VEL2 none DIG1 none 2010.07.01-10:00:00 present HP
+    "00" EHZ VEL3 none DIG1 none 2010.07.01-10:00:00 present HP
+  end_channel
+  
+end_station
+
