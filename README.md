@@ -38,22 +38,23 @@ Where:
  - 𝜧<sub>𝑶</sub> is the **seismic moment**;
  - 𝒇 is the frequency;
  - 𝒇<sub>𝒄</sub> is the **corner frequency**;
- - 𝒕* (**t-star**) is the ratio between the S-wave trave time and the
-   **quality factor**, quantifying the inelastic attenuation.
+ - 𝒕<sup>∗</sup> (**t-star**) is the ratio between the S-wave trave
+   time and the **quality factor**, quantifying the inelastic
+   attenuation.
 
 `source_spec` computes **seismic moment**, **corner frequency** and
-**t-star** are from the modelling of S-wave spectra.  The other
-parameters are user defined (density, wave velocity, radiation pattern
+**t-star** from the modelling of S-wave spectra.  The other parameters
+are user defined (density, wave velocity, radiation pattern
 coefficient) or derived from station and source location (hypocentral
 distance).
 
 Other parameters are computed from the previous ones, namely:
- 
+
  - the moment magnitude Mw;
  - the source radius;
  - the Brune stress drop.
 
-As a bonus, `source_spec` also computes local magnitude. 
+As a bonus, `source_spec` also computes local magnitude.
 
 ### Input/output
 
