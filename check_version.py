@@ -10,6 +10,9 @@ except Exception:
 
 min_version = '1.4'
 
+# Fix for old version numbers starting with 'v'
+__version__ = __version__.lstrip('v')
+
 if LooseVersion(__version__) < LooseVersion(min_version):
     sys.stderr.write(
         'Error:\n'
