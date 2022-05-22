@@ -1,6 +1,7 @@
 <img src="imgs/SourceSpec_logo.svg" width="600">
 
 # SourceSpec
+
 **Earthquake source parameters from S-wave displacement spectra**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3688587.svg)](https://doi.org/10.5281/zenodo.3688587)
@@ -32,18 +33,18 @@ The source spectrum is defined as:
 
 Where:
 
- - 𝒓 is the hypocentral distance;
- - 𝑹<sub>𝞗𝞥</sub> is the radiation pattern coefficient for S-waves;
- - 𝞺<sub>𝒉</sub> and 𝞺<sub>𝒓</sub> are the medium densities at the
-   hypocenter and at the receiver, respectively;
- - 𝜷<sub>𝒉</sub> and 𝜷<sub>𝒓</sub> are the S-wave velocities at the
-   hypocenter and at the receiver, respectively;
- - 𝜧<sub>𝑶</sub> is the **seismic moment**;
- - 𝒇 is the frequency;
- - 𝒇<sub>𝒄</sub> is the **corner frequency**;
- - 𝒕<sup>∗</sup> (**t-star**) is the ratio between the S-wave trave
-   time and the **quality factor**, quantifying the inelastic
-   attenuation.
+- 𝒓 is the hypocentral distance;
+- 𝑹<sub>𝞗𝞥</sub> is the radiation pattern coefficient for S-waves;
+- 𝞺<sub>𝒉</sub> and 𝞺<sub>𝒓</sub> are the medium densities at the
+  hypocenter and at the receiver, respectively;
+- 𝜷<sub>𝒉</sub> and 𝜷<sub>𝒓</sub> are the S-wave velocities at the
+  hypocenter and at the receiver, respectively;
+- 𝜧<sub>𝑶</sub> is the **seismic moment**;
+- 𝒇 is the frequency;
+- 𝒇<sub>𝒄</sub> is the **corner frequency**;
+- 𝒕<sup>∗</sup> (**t-star**) is the ratio between the S-wave trave
+  time and the **quality factor**, quantifying the inelastic
+  attenuation.
 
 `source_spec` computes **seismic moment**, **corner frequency** and
 **t-star** from the modelling of S-wave spectra.  The other parameters
@@ -53,9 +54,9 @@ distance).
 
 Other parameters are computed from the previous ones, namely:
 
- - the moment magnitude Mw;
- - the source radius;
- - the Brune stress drop.
+- the moment magnitude Mw;
+- the source radius;
+- the Brune stress drop.
 
 As a bonus, `source_spec` also computes local magnitude.
 
@@ -67,11 +68,11 @@ by [ObsPy](https://obspy.org) (e.g., miniSEED, SAC).
 
 The easiest way of running `source_spec` is by having available:
 
- - a miniSEED file with waveform data (e.g., `data.mseed`);
- - a StationXML file with station metadata (station locations and instrument
-   response) (e.g., `station.xml`);
- - a QuakeML file with event information and possibly arrival picks (e.g.,
-   `event.xml`).
+- a miniSEED file with waveform data (e.g., `data.mseed`);
+- a StationXML file with station metadata (station locations and instrument
+  response) (e.g., `station.xml`);
+- a QuakeML file with event information and possibly arrival picks (e.g.,
+  `event.xml`).
 
 In this case, running `source_spec` is as simple as:
 
@@ -88,36 +89,35 @@ To get help:
 
     source_spec -h
 
-
 ### Examples
 
 This repository contains several examples:
 
-  - [test_CDSA](test_CDSA):
-    - data in miniSEED format
-    - event information and phase picks in QuakeML format
-    - instrumental response in stationXML format
-  - [test_CRL](test_CRL):
-    - data in SAC format
-    - phase picks in "hypo" format
-    - event information in "hypo" format
-    - station coordinates in SAC header
-    - instrumental response in "dataless SEED" format
-  - [test_ISNet](test_ISNet):
-    - data in SAC format (tgz archive)
-    - phase picks in SAC header
-    - event information in SAC header
-    - station coordinates in SAC header
-    - station sensitivity in SAC header
-  - [test_IPOC](test_IPOC):
-    - data in SAC format
-    - phase picks in SAC header
-    - event information in SAC header
-    - station coordinates in SAC header
-    - traces pre-deconvolved from instrumental response
-
+- [test_CDSA](test_CDSA):
+  - data in miniSEED format
+  - event information and phase picks in QuakeML format
+  - instrumental response in stationXML format
+- [test_CRL](test_CRL):
+  - data in SAC format
+  - phase picks in "hypo" format
+  - event information in "hypo" format
+  - station coordinates in SAC header
+  - instrumental response in "dataless SEED" format
+- [test_ISNet](test_ISNet):
+  - data in SAC format (tgz archive)
+  - phase picks in SAC header
+  - event information in SAC header
+  - station coordinates in SAC header
+  - station sensitivity in SAC header
+- [test_IPOC](test_IPOC):
+  - data in SAC format
+  - phase picks in SAC header
+  - event information in SAC header
+  - station coordinates in SAC header
+  - traces pre-deconvolved from instrumental response
 
 ## source_model
+
 `source_model` plots theoretical spectra (and optionally observed ones), given
 one or more values for moment magnitude, corner frequency and t-star.
 
@@ -133,8 +133,8 @@ See the help for more information on the command line syntax:
 
     source_model -h
 
-
 ## source_residuals
+
 `source_residuals` computes station residuals from the output of `source_spec`.
 It takes multiple pickle files in the form:
 
