@@ -76,7 +76,11 @@ The easiest way of running `source_spec` is by having available:
 
 In this case, running `source_spec` is as simple as:
 
-    source_spec -c source_spec.conf -d data.mseed -q event.xml
+    source_spec -d data.mseed -q event.xml
+
+Note that we assume here that the configuration file name is `source_spec.conf`.
+If you use a different name, you must specify it via the `-c` command-line
+option.
 
 The path to the StationXML file must be specified in the configuration file
 `source_spec.conf`.
