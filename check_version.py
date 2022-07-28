@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf8 -*-
 import sys
-from distutils.version import LooseVersion
+try:
+    from packaging.version import Version
+except ImportError:
+    from distutils.version import LooseVersion as Version
 try:
     from sourcespec import __version__
 except Exception:
@@ -13,7 +16,7 @@ min_version = '1.5'
 # Fix for old version numbers starting with 'v'
 __version__ = __version__.lstrip('v')
 
-if LooseVersion(__version__) < LooseVersion(min_version):
+if Version(__version__) < Version(min_version):
     sys.stderr.write(
         'Error:\n'
         '  These tests are designed for SourceSpec >= {}\n'
