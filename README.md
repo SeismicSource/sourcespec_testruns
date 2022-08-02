@@ -14,7 +14,7 @@ Python): `source_spec`, `source_model` and `source_residuals`.
 The code is available at
 [github.com/SeismicSource/sourcespec](https://github.com/SeismicSource/sourcespec).
 
-A very incomplete documentation can be found at
+The official documentation can be found at
 [sourcespec.readthedocs.io](https://sourcespec.readthedocs.io).
 
 ## source_spec
