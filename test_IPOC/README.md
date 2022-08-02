@@ -7,4 +7,4 @@ Observatory Chile](https://www.ipoc-network.org) (IPOC)
 - phase picks in SAC header
 - event information in SAC header
 - station coordinates in SAC header
-- traces pre-deconvolved from instrumental response
+- traces pre-deconvolved from instrumental response (`sensitivity=1`)
