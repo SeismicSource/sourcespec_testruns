@@ -307,5 +307,8 @@
     "HA.TRAZ.00.BHE" : "HA.TRAZ.00.HHE",
     "HP.UPR.00.BHZ"  : "HP.UPR.00.EHZ",
     "HP.UPR.00.BHN"  : "HP.UPR.00.EHN",
-    "HP.UPR.00.BHE"  : "HP.UPR.00.EHE"
+    "HP.UPR.00.BHE"  : "HP.UPR.00.EHE",
+    ".DSF..HHE"      : "HP.DSF.00.HHE",
+    ".DSF..HHN"      : "HP.DSF.00.HHN",
+    ".DSF..HHZ"      : "HP.DSF.00.HHZ"
 }
