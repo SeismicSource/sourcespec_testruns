@@ -140,14 +140,14 @@ See the help for more information on the command line syntax:
 ## source_residuals
 
 `source_residuals` computes station residuals from the output of `source_spec`.
-It takes multiple pickle files in the form:
+It takes multiple HDF5 files in the form:
 
-    EVID-residual.pickle
+    EVID-residual.hdf5
 
 containing single-event station residual, computes average station residuals,
-and store them into a pickle file called:
+and store them into an HDF5 file called:
 
-    residual_mean.pickle
+    residual_mean.hdf5
 
 To get help:
 
