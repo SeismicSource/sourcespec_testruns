@@ -6,7 +6,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3688587.svg)](https://doi.org/10.5281/zenodo.3688587)
 
-Copyright (c) 2011-2023 Claudio Satriano <satriano@ipgp.fr>
+Copyright (c) 2011-2024 Claudio Satriano <satriano@ipgp.fr>
 
 SourceSpec is a collection of three command line programs (written in
 Python): `source_spec`, `source_model` and `source_residuals`.

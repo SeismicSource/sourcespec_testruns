@@ -11,7 +11,7 @@ except Exception:
     sys.stderr.write("Error: SourceSpec doesn't seem to be installed\n")
     sys.exit(1)
 
-min_version = '1.7'
+min_version = '1.8'
 
 # Fix for old version numbers starting with 'v'
 __version__ = __version__.lstrip('v')
